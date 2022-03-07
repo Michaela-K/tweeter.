@@ -33,3 +33,6 @@ textarea::placeholder {
   display: flex;
   justify-content: space-between;
 }
+.red {
+  color: red;
+}
