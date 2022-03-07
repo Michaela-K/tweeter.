@@ -5,6 +5,8 @@
  */
 html {
   box-sizing: border-box;
+  /* background-color: #f2eecb;
+  background-image: url("https://www.transparenttextures.com/patterns/vintage-speckles.png"); */
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -18,7 +20,7 @@ body {
   font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 1.5px;
   color: #545149;
-  background-color: #f4f1ec;
+  
   font-size: 24px;
 }
 
@@ -30,5 +32,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f4f1ec;
+}
+
+main button{
+  font-size: .9em;
 }
