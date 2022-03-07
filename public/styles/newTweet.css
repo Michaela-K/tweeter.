@@ -1,0 +1,28 @@
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.new-tweet {
+  margin-bottom: 60px;
+}
+form {
+  width: 80%;
+  margin-top: 50px;
+}
+#tweet-text {
+  background-color: #f8f8f8;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 50px;
+  overflow: hidden;
+  resize: none;
+}
+textarea::placeholder {
+  font-size: 1.15em;
+}

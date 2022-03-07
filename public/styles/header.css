@@ -9,9 +9,15 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
   color: #ffffff;
   font-size: 1.3em;
-  /* background-color: #c34a21; */
+  font-family: "Smokum", cursive, sans-serif;
+  background-color: #be5c3b;
   padding-bottom: 15px;
 }
 header img {
   margin-top: 60px;
+}
+
+section > h2{
+  font-family: "Smokum", cursive, sans-serif;
+  letter-spacing: 2.5px;
 }
