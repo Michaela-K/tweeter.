@@ -1,0 +1,17 @@
+header {
+  margin-top: 118px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  color: #ffffff;
+  font-size: 1.3em;
+  /* background-color: #c34a21; */
+  padding-bottom: 15px;
+}
+header img {
+  margin-top: 60px;
+}
