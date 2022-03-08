@@ -5,6 +5,9 @@
  */
 $(()=> {
 
+   //no error
+   $(".errors").slideUp(10).text("");
+
  const createTweetElement = (tweetData) => {
    let $newTweet = $(`
       <article class="tweet header">
@@ -55,7 +58,8 @@ $(()=> {
     $form.on("submit", function (event) {
     event.preventDefault();
     console.log("Button clicked");
-  })
+  
+
 
   //submit tweet to database
   let $formData = $form.serialize();  //turns a set of form data into a query string
@@ -69,6 +73,7 @@ $(()=> {
     })
     .catch((err) => {
       console.log(" formData Error: ", err);
+      console.log("formData Error", err.message);
     });
 
     const loadTweets = function () {
@@ -81,9 +86,10 @@ $(()=> {
         })
         .catch((err) => {
           console.log("loadTweets Error: ", err);
+          console.log("loadTweets Error: ",err.message);
         });
     };
     loadTweets();
-
+  });
 
 });
