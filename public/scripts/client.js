@@ -5,6 +5,13 @@
  */
 $(()=> {
 
+   //to prevent application vulnerability
+   const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
    //no error
    $(".errors").slideUp(10).text("");
 
@@ -14,21 +21,21 @@ $(()=> {
         <div class="headerContainer">
           <div class="iconAndPara">
             <p class="pImg">
-            <img class="user-img" src="${
+            <img class="user-img" src="${escape(
                 tweetData.user.avatars
-              }" aria-hidden="true"></img>
-              ${tweetData.user.name}
+            )}" aria-hidden="true"></img>
+              ${escape(tweetData.user.name)}
             </p>
             </div>
-          <p class="at">${tweetData.user.handle}</p>
+          <p class="at">${escape(tweetData.user.handle)}</p>
         </div>
         <p class="quote">
-        ${tweetData.content.text}
+        ${escape(tweetData.content.text)}
         </p>
         <footer class="footer">
           <div class="iconsAndDate">
             <time class ="timeago" datetime="2008-07-17T09:24:17Z">${
-              timeago.format(tweetData.created_at)
+              escape(timeago.format(tweetData.created_at))
             }</time>
             <div class="iconContainer">
               <i class="fa fa-flag" aria-hidden="true"></i>
