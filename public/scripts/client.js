@@ -64,5 +64,28 @@ $(()=> {
     
    renderTweets(tweetData);
 
+    //form submission
+    let $form = $(".tweetForm");
+    $form.on("submit", function (event) {
+    event.preventDefault();
+    console.log("Button clicked");
+  })
+
+  //submit tweet to database
+  let $formData = $form.serialize();  //turns a set of form data into a query string
+  $.ajax({
+    url: "/tweets",
+    type: "POST",
+    data: $formData //serialized data should be sent to the server in the data field of the AJAX POST request.
+  })
+    .then(function (tweets) {
+      loadTweets(tweets);
+    })
+    .catch((err) => {
+      console.log(" formData Error: ", err);
+    });
+
+
+
 
 });
