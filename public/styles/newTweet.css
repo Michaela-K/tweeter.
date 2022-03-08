@@ -36,3 +36,78 @@ textarea::placeholder {
 .red {
   color: red;
 }
+
+
+/* All tweets CSS*/
+article {
+  border: 4px solid grey;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+article:hover {
+  -webkit-box-shadow: 7px 7px 0px 1px #d4c346;
+  box-shadow: 7px 7px 0px 1px #d4c346;
+}
+
+article > p {
+  margin-top: 30px;
+  border-bottom: 3px solid grey;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  height: 15px;
+}
+.quote {
+  width: 100%;
+  word-break: break-word;
+}
+.iconAndPara {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tweetsContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.header > p {
+  font-size: 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.user-img {
+  height: 30px;
+}
+footer i {
+  color: rgb(175, 175, 175);
+}
+footer i:hover {
+  color: #d4c346;
+}
+.iconsAndDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 15px;
+  font-size: 17px;
+}
+
+.iconContainer {
+  justify-content: space-around;
+}
+
