@@ -5,7 +5,7 @@
  */
 $(()=> {
 
-  const tweetData = {
+  const tweetData = [{
     "user": {
       "name": "Newton",
       "avatars": "https://i.imgur.com/73hZDYK.png",
@@ -15,11 +15,10 @@ $(()=> {
         "text": "If I have seen further it is by standing on the shoulders of giants"
       },
     "created_at": 1461116232227
- }
+ }]
 
- 
  const createTweetElement = (tweetData) => {
-  let $newTweet = $(`
+   let $newTweet = $(`
       <article class="tweet header">
         <div class="headerContainer">
           <div class="iconAndPara">
@@ -53,10 +52,17 @@ $(()=> {
     return $newTweet;
 };
 
-const $tweet = createTweetElement(tweetData);
-$('.tweetsContainer').append($tweet);
-
-
+   const renderTweets = function (tweets) {
+       // loops through tweets
+       for (const tweet of tweets) {
+         // calls createTweetElement for each tweet
+         let $tweet = createTweetElement(tweet);
+         // takes return value and appends it to the tweets container
+       $(".tweetsContainer").prepend($tweet);
+     }
+   };
+    
+   renderTweets(tweetData);
 
 
 });
