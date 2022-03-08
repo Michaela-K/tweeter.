@@ -5,18 +5,6 @@
  */
 $(()=> {
 
-  const tweetData = [{
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-        "handle": "@SirIsaac"
-      },
-    "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-    "created_at": 1461116232227
- }]
-
  const createTweetElement = (tweetData) => {
    let $newTweet = $(`
       <article class="tweet header">
@@ -37,7 +25,7 @@ $(()=> {
         <footer class="footer">
           <div class="iconsAndDate">
             <time class ="timeago" datetime="2008-07-17T09:24:17Z">${
-              tweetData.created_at
+              timeago.format(tweetData.created_at)
             }</time>
             <div class="iconContainer">
               <i class="fa fa-flag" aria-hidden="true"></i>
@@ -61,8 +49,6 @@ $(()=> {
        $(".tweetsContainer").prepend($tweet);
      }
    };
-    
-   renderTweets(tweetData);
 
     //form submission
     let $form = $(".tweetForm");
@@ -85,7 +71,19 @@ $(()=> {
       console.log(" formData Error: ", err);
     });
 
-
+    const loadTweets = function () {
+      $.ajax({
+        url: "/tweets",
+        method: "GET"
+      })
+        .then(function (tweets) {
+          renderTweets(tweets); 
+        })
+        .catch((err) => {
+          console.log("loadTweets Error: ", err);
+        });
+    };
+    loadTweets();
 
 
 });
