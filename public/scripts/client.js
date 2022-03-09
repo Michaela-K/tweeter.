@@ -90,6 +90,10 @@ $(()=> {
       console.log(" formData Error: ", err);
       console.log("formData Error", err.message);
     });
+    if ($form.children("textarea").val().length > 0) {
+      $("#tweet-text").val("");
+    }
+  });
 
     const loadTweets = function () {
       $.ajax({
@@ -105,6 +109,5 @@ $(()=> {
         });
     };
     loadTweets();
-  });
 
 });
