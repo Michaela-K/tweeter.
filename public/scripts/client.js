@@ -34,9 +34,7 @@ $(()=> {
         </p>
         <footer class="footer">
           <div class="iconsAndDate">
-            <time class ="timeago" datetime="2008-07-17T09:24:17Z">${
-              escape(timeago.format(tweetData.created_at))
-            }</time>
+            <time class ="timeago" datetime="2008-07-17T09:24:17Z">${escape(timeago.format(tweetData.created_at))}</time>
             <div class="iconContainer">
               <i class="fa fa-flag" aria-hidden="true"></i>
               <i class="fa fa-retweet" aria-hidden="true"></i>

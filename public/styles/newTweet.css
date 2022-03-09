@@ -127,3 +127,27 @@ footer i:hover {
   justify-content: space-around;
 }
 
+@media all and (max-width: 452px) {
+  .header > p {
+    height: 120px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .response {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  header {
+    width: 35%;
+    height: 35vw;
+    margin: 150px 0px 0px 30px;
+  }
+
+  main {
+    width: 65%;
+    margin-top: 100px;
+  }
+}
+
