@@ -110,4 +110,15 @@ $(()=> {
     };
     loadTweets();
 
+    //toggle compose tweet section up and down
+  $('button.button').click(function(){
+    $('.new-tweet').slideToggle();
+  })
+
+  //compose button - auto focus on textarea
+  $(".button").on("click", function () {
+    $("textarea").focus();
+  });
+
+
 });

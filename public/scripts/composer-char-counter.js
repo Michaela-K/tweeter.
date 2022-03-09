@@ -25,4 +25,5 @@ $(() => {
   }
   $('button.submit').click(reloadChar);
 
+  
 });

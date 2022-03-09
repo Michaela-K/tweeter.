@@ -22,6 +22,12 @@ span{
   font-size: 1.9em;
   letter-spacing: 3px;
 }
+button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
 
 .navBtn {
   display: flex;
