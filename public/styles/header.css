@@ -6,9 +6,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+  background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
   color: #ffffff;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  letter-spacing: 3px;
   font-family: "Smokum", cursive, sans-serif;
   background-color: #be5c3b;
   padding-bottom: 15px;

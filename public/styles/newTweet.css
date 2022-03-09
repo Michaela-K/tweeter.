@@ -53,6 +53,10 @@ textarea::placeholder {
   color: red;
 }
 
+button:hover {
+  background-color: hsl(11, 100%, 60%, 0.6);
+}
+
 
 /* All tweets CSS*/
 article {
@@ -64,8 +68,8 @@ article {
   margin: 30px;
 }
 article:hover {
-  -webkit-box-shadow: 7px 7px 0px 1px #d4c346;
-  box-shadow: 7px 7px 0px 1px #d4c346;
+  -webkit-box-shadow: 7px 7px 0px 1px hsla(11, 100%, 60%, 0.5);
+  box-shadow: 7px 7px 0px 1px hsl(11, 100%, 60%, 0.5);
 }
 
 article > p {
@@ -109,10 +113,10 @@ article > p {
   height: 30px;
 }
 footer i {
-  color: rgb(175, 175, 175);
+  color: rgb(153, 153, 153);
 }
 footer i:hover {
-  color: #d4c346;
+  color: #FF5733;
 }
 .iconsAndDate {
   display: flex;
