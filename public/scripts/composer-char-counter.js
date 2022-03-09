@@ -17,13 +17,12 @@ $(() => {
 
     $("#tweet-text").keyup(set);
 
-});
 
-$(() => {
   function reloadChar(){
     let maxChar = 140;
     $("output.counter").text(maxChar);
     console.log("submit button clicked")
   }
-  $(".submit").click(reloadChar);
+  $('button.submit').click(reloadChar);
+
 });
