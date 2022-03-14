@@ -37,13 +37,7 @@ button {
   align-items: center;
   height: 10px;
 }
-
-i {
-  margin-top: 0px;
-  height: 10px;
-}
-
-div.navBtn > i {
+.navBtn i {
   color: #FF5733;
   animation-name: floating;
   animation-duration: 3s;
@@ -52,8 +46,9 @@ div.navBtn > i {
   margin: 0;
 }
 
-div.navBtn > p {
-  margin: 0;
+i {
+  margin-top: 0px;
+  height: 10px;
 }
 
 @keyframes floating {

@@ -41,12 +41,15 @@ form {
   overflow: hidden;
   resize: none;
 }
+
 textarea{
   border-radius: 6px;
 }
-textarea::placeholder {
-  font-size: 1.15em;
-}
+  textarea::placeholder {
+    font-size: 1.15em;
+    background-color: pink;
+  }
+  
 .btn-counter {
   display: flex;
   justify-content: space-between;
