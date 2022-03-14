@@ -1,8 +1,10 @@
+@import 'variables';
+
 nav {
   height: 120px;
   width: 100vw;
-  background-color: rgb(189, 189, 189);
-  color: #be5c3b;
+  background-color: $navBackgroundColour;
+  color: $secondary;
   padding: 1.5em;
   display: flex;
   justify-content: space-between;
@@ -25,8 +27,7 @@ span{
 button{
   cursor: pointer;
   background-color: transparent;
-  /* border: none; */
-  color: rgb(15, 15, 15);
+  color:  $btnFontColour;
 }
 
 .navBtn {
@@ -42,7 +43,7 @@ i {
   height: 10px;
 }
 div.navBtn > i {
-  color: #FF5733;
+  color: $btnHighlightColour;
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;

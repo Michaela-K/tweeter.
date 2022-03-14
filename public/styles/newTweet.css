@@ -55,7 +55,7 @@ textarea::placeholder {
 }
 
 .red {
-  color: red;
+  color: #d61313;
 }
 
 button:hover {
@@ -73,8 +73,8 @@ article {
 }
 
 article:hover {
-  -webkit-box-shadow: 7px 7px 0px 1px rgba(255, 88, 51, 0.5);
-  box-shadow: 7px 7px 0px 1px rgba(255, 88, 51, 0.5);
+  -webkit-box-shadow: 7px 7px 0px 1px rgba(255, 88, 51, 0.6);
+  box-shadow: 7px 7px 0px 1px rgba(255, 88, 51, 0.6);
 }
 
 article > p {
