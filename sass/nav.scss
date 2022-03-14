@@ -31,10 +31,7 @@ button{
 }
 
 .navBtn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexColCenter;
   height: 10px;
 
   i {

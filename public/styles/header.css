@@ -1,11 +1,11 @@
 header {
-  margin-top: 118px;
-  height: 400px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 118px;
+  height: 400px;
+  width: 100%;
   background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
   color: #ffffff;
   font-size: 1.5em;

@@ -1,9 +1,9 @@
 section {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 80%;
 }
 
@@ -22,6 +22,7 @@ section {
   height: 4.5vh;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -125,7 +126,7 @@ footer i {
   color: #999999;
 }
 footer i:hover {
-  color: #FF5733;
+  color: #ff5733;
 }
 
 .iconsAndDate {
