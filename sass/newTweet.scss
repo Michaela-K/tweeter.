@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 section {
   display: flex;
@@ -18,7 +18,7 @@ section {
   background-color: $errBackground;
   border: 0.3px solid $errBorder;
   color: $errRed;
-  font-size: .8em;
+  font-size: 0.8em;
   border-radius: 5px;
   width: 75%;
   height: 4.5vh;
@@ -42,14 +42,14 @@ form {
   resize: none;
 }
 
-textarea{
+textarea {
   border-radius: 6px;
-}
-  textarea::placeholder {
-    font-size: 1.15em;
-    background-color: pink;
-  }
   
+  &::placeholder {
+    font-size: 1.15em;
+  }
+}
+
 .btn-counter {
   display: flex;
   justify-content: space-between;
@@ -58,10 +58,11 @@ textarea{
   color: $errRed;
 }
 
-button:hover {
-  background-color: $hover;
+button{
+  &:hover {
+    background-color: $hover;
+  }
 }
-
 
 /* All tweets CSS*/
 article {
@@ -71,16 +72,17 @@ article {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 30px;
-}
-article:hover {
-  -webkit-box-shadow: 7px 7px 0px 1px $hover;
-  box-shadow: 7px 7px 0px 1px $hover;
+  
+  &:hover {
+    -webkit-box-shadow: 7px 7px 0px 1px $hover;
+    box-shadow: 7px 7px 0px 1px $hover;
+  }
+  p.quote {
+    margin-top: 30px;
+    border-bottom: 3px solid $primary;
+  }
 }
 
-article > p {
-  margin-top: 30px;
-  border-bottom: 3px solid $primary;
-}
 .headerContainer {
   display: flex;
   flex-direction: row;
@@ -107,21 +109,23 @@ article > p {
   display: flex;
   justify-content: center;
   width: 80%;
-}
-.header > p {
-  font-size: 20px;
-  height: 80px;
-  display: flex;
-  align-items: center;
+
+  p {
+    font-size: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
 }
 .user-img {
   height: 30px;
 }
 footer i {
   color: $icons;
-}
-footer i:hover {
-  color:  $btnHighlightColour;
+
+  &:hover {
+    color: $btnHighlightColour;
+  }
 }
 .iconsAndDate {
   display: flex;
@@ -159,4 +163,3 @@ footer i:hover {
     margin-top: 100px;
   }
 }
-

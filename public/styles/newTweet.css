@@ -44,10 +44,8 @@ form {
 textarea {
   border-radius: 6px;
 }
-
 textarea::placeholder {
   font-size: 1.15em;
-  background-color: pink;
 }
 
 .btn-counter {
@@ -72,13 +70,11 @@ article {
   flex-wrap: wrap;
   margin: 30px;
 }
-
 article:hover {
   -webkit-box-shadow: 7px 7px 0px 1px rgba(255, 88, 51, 0.6);
   box-shadow: 7px 7px 0px 1px rgba(255, 88, 51, 0.6);
 }
-
-article > p {
+article p.quote {
   margin-top: 30px;
   border-bottom: 3px solid grey;
 }
@@ -114,8 +110,7 @@ article > p {
   justify-content: center;
   width: 80%;
 }
-
-.header > p {
+.header p {
   font-size: 20px;
   height: 80px;
   display: flex;
@@ -129,7 +124,6 @@ article > p {
 footer i {
   color: #999999;
 }
-
 footer i:hover {
   color: #FF5733;
 }
