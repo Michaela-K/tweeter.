@@ -8,7 +8,6 @@ html {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -16,23 +15,25 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   letter-spacing: 1.5px;
   color: #545149;
+  
   font-size: 24px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-main {
+ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-main button {
-  font-size: 0.9em;
+main button{
+  font-size: .9em;
 }

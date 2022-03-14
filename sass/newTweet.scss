@@ -13,10 +13,10 @@ section {
 
 .errors {
   margin-top: 25px;
-  background-color: rgba(214, 19, 19, 0.1);
-  border: 0.3px solid rgba(214, 19, 19, 0.3);
-  color: #d61313;
-  font-size: 0.8em;
+  background-color: rgb(214, 19, 19, 0.1);;
+  border: 0.3px solid rgb(214, 19, 19, 0.3);
+  color: rgb(214, 19, 19);
+  font-size: .8em;
   border-radius: 5px;
   width: 75%;
   height: 4.5vh;
@@ -30,7 +30,6 @@ form {
   width: 80%;
   margin-top: 50px;
 }
-
 #tweet-text {
   background-color: #f8f8f8;
   width: 100%;
@@ -40,27 +39,24 @@ form {
   overflow: hidden;
   resize: none;
 }
-
-textarea {
+textarea{
   border-radius: 6px;
 }
-
 textarea::placeholder {
   font-size: 1.15em;
 }
-
 .btn-counter {
   display: flex;
   justify-content: space-between;
 }
-
 .red {
   color: red;
 }
 
 button:hover {
-  background-color: rgba(255, 88, 51, 0.6);
+  background-color: hsl(11, 100%, 60%, 0.6);
 }
+
 
 /* All tweets CSS*/
 article {
@@ -71,17 +67,15 @@ article {
   flex-wrap: wrap;
   margin: 30px;
 }
-
 article:hover {
-  -webkit-box-shadow: 7px 7px 0px 1px rgba(255, 88, 51, 0.5);
-  box-shadow: 7px 7px 0px 1px rgba(255, 88, 51, 0.5);
+  -webkit-box-shadow: 7px 7px 0px 1px hsla(11, 100%, 60%, 0.5);
+  box-shadow: 7px 7px 0px 1px hsl(11, 100%, 60%, 0.5);
 }
 
 article > p {
   margin-top: 30px;
   border-bottom: 3px solid grey;
 }
-
 .headerContainer {
   display: flex;
   flex-direction: row;
@@ -90,49 +84,40 @@ article > p {
   padding-top: 20px;
   height: 15px;
 }
-
 .quote {
   width: 100%;
   word-break: break-word;
 }
-
 .iconAndPara {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
 .tweetsContainer {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
 .header {
   display: flex;
   justify-content: center;
   width: 80%;
 }
-
 .header > p {
   font-size: 20px;
   height: 80px;
   display: flex;
   align-items: center;
 }
-
 .user-img {
   height: 30px;
 }
-
 footer i {
-  color: #999999;
+  color: rgb(153, 153, 153);
 }
-
 footer i:hover {
   color: #FF5733;
 }
-
 .iconsAndDate {
   display: flex;
   flex-direction: row;
@@ -158,7 +143,6 @@ footer i:hover {
     justify-content: center;
     width: 100%;
   }
-
   header {
     width: 35%;
     height: 35vw;
@@ -170,3 +154,4 @@ footer i:hover {
     margin-top: 100px;
   }
 }
+
