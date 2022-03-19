@@ -142,6 +142,26 @@ footer i:hover {
   justify-content: space-around;
 }
 
+.pageToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 45px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: #bdbdbd;
+  opacity: 0.65;
+  z-index: 1;
+  cursor: pointer;
+}
+.pageToggle:hover {
+  background-color: #ff5733;
+}
+
 @media all and (max-width: 452px) {
   .header > p {
     height: 120px;

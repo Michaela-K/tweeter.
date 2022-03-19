@@ -135,6 +135,26 @@ footer i {
   justify-content: space-around;
 }
 
+.pageToggle{
+  @include flexColCenter;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  height: 45px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: $navBackgroundColour;
+  opacity: 0.65;
+  z-index: 1;
+  cursor: pointer;
+  
+  &:hover{
+    background-color: $btnHighlightColour;
+  }
+}
+
 @media all and (max-width: 452px) {
   .header > p {
     height: 120px;
@@ -158,3 +178,4 @@ footer i {
     margin-top: 100px;
   }
 }
+
