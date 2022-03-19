@@ -120,5 +120,13 @@ $(()=> {
     $("textarea").focus();
   });
 
-
+ //Scroll Button Display
+ $(window).scroll(function(){
+  let showBtn = 300;
+  if ($(this).scrollTop() > showBtn ) { 
+   $('.pageToggle').fadeIn();
+  } else { 
+   $('.pageToggle').fadeOut();
+  }
+ });
 });
